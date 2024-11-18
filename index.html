@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+
+  <nav>
+    <a href="#"><img class="logo" src="./images/logo.svg" alt="Loopstudios"></a>
+    <ul class="desktop">
+      <li><a href="">About</a></li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">Events</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Support</a></li>
+    </ul>
+    <img src="/images/icon-hamburger.svg" id="menu-btn" class="mobile" alt="">
+  </nav>
+
+  <div class="mobile-menu">
+    <div class="mhead">
+      <img src="/images/logo.svg" class="mlogo" alt="Loopstudios">
+      <img src="/images/icon-close.svg" id="menu-close" class="mclose" alt="Close">
+      
+    </div>
+    <ul class=" mlist">
+      <li><a href="">About</a></li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">Events</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Support</a></li>
+    </ul>
+  </div>
+
+<div class="heading">
+  <h1>Immersive experiences that deliver</h1>
+</div>
+
+</div>
+
+
+ <div class="section1">
+<div class="left-block">
+
+</div>
+   <div class="right-block">
+     <h1>The leader in interactive VR</h1>
+    <p>
+      
+      Founded in 2011, Loopstudios has been producing world-class virtual reality 
+    projects for some of the best companies around the globe. Our award-winning 
+    creations have transformed businesses through digital experiences that bind 
+    to their brand.</p>
+   </div>
+</div>
+
+
+<div class="section2">
+  <div class="head">
+    <h1>Our creations</h1>
+    <a href="#">See all</a>
+  </div>
+<div class="cards">
+
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-deep-earth.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-deep-earth.jpg" class="mobile"  alt="Deep earth">
+    <h1>Deep earth</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-night-arcade.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-night-arcade.jpg" class="mobile"  alt="Deep earth">
+    <h1>Night arcade</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-soccer-team.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-soccer-team.jpg" class="mobile"  alt="Deep earth">
+    <h1>  Soccer team VR</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-grid.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-grid.jpg" class="mobile"  alt="Deep earth">
+    <h1>The    grid</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-from-above.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-from-above.jpg" class="mobile"  alt="Deep earth">
+    <h1>  From up above VR</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-pocket-borealis.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-pocket-borealis.jpg" class="mobile"  alt="Deep earth">
+    <h1>  Pocket borealis</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-curiosity.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-curiosity.jpg" class="mobile"  alt="Deep earth">
+    <h1>   The curiosity</h1>
+    
+  </div>
+  <div class="card">
+    <div class="overlay"></div>
+    <img src="./images/desktop/image-fisheye.jpg" class="desktop"  alt="Deep earth">
+    <img src="./images/mobile/image-fisheye.jpg" class="mobile"  alt="Deep earth">
+    <h1>   Make it fisheye</h1>
+    
+  </div>
+
+</div>
+
+<a href="#" class="see-all mobile">See all</a>
+  </div>
+
+
+
+  <footer>
+    <div class="ftop">
+      <img src="/images/logo.svg" alt="">
+      <div class="icons">
+        <img src="/images/icon-facebook.svg" alt="">
+        <img src="/images/icon-instagram.svg" alt="">
+        <img src="/images/icon-pinterest.svg" alt="">
+        <img src="/images/icon-twitter.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="fbottom">
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Support</a></li>
+      </ul>
+      <p>&copy; 2021 Space Tourism. All rights reserved.</p>
+    </div>
+  </footer> 
+
+
+
+  <!-- 
+
+ 
+
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  © 2021 Loopstudios. All rights reserved. -->
+
+  <script>
+    const hamburger = document.querySelector('#menu-btn');
+    const closem = document.querySelector('#menu-close');
+    const menu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', ()=>{
+      menu.classList.add('show')
+    })
+    
+    closem.addEventListener('click', ()=>{
+      menu.classList.remove('show')
+    })
+    
+
+  </script>
+</body>
+</html>
